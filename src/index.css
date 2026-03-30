@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: max(320px, 100dvh);
+    @apply bg-surface text-on-surface;
+  }
+}
+
+@layer utilities {
+  .font-headline {
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .font-label {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .sunset-glow {
+    background: linear-gradient(135deg, #b12d00 0%, #ff5725 100%);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
+}
